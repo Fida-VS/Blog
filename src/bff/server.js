@@ -42,9 +42,9 @@ sessions.remove(session);
 
 	async register(regLogin, regPassword){
 
-		const user = await getUser(regLogin);
+		const existedUser = await getUser(regLogin);
 
-		if (user) {
+		if (existedUser) {
 			return {
 				error: 'Такой логин уже занят',
 				res: null,
@@ -52,7 +52,7 @@ sessions.remove(session);
 		}
 
 
-		await addUser(regLogin, regPassword);
+	const user = await addUser(regLogin, regPassword);
 
 		return {
 			error: null,
