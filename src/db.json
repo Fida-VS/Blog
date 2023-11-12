@@ -3,37 +3,16 @@
     {
       "id": "001",
       "login": "anton",
-      "password": "qwerty123",
+      "password": "F6391453d",
       "registed_at": "2050-09-22",
       "role_id": "0"
     },
     {
-      "login": "ivan",
-      "password": "qwerty123",
-      "registed_at": "2034-07-12 04:58",
-      "role_id": 2,
-      "id": "obNOD_s"
-    },
-    {
       "login": "FidaVS",
       "password": "qwerty",
-      "registed_at": "2061-02-05 02:49",
+      "registed_at": "2060-01-22 04:50",
       "role_id": 2,
-      "id": "5cge2Ix"
-    },
-    {
-      "login": "vasia",
-      "password": "asdfgh",
-      "registed_at": "2054-05-02 17:03",
-      "role_id": 2,
-      "id": "2z0OIqA"
-    },
-    {
-      "login": "ivan2",
-      "password": "asdfgh",
-      "registed_at": "2035-10-21 09:58",
-      "role_id": 2,
-      "id": "hkZbnTz"
+      "id": "H1n7fDR"
     }
   ],
   "roles": [
@@ -50,8 +29,8 @@
       "name": "Читатель"
     },
     {
-      "id": "Гость",
-      "name": "Администратор"
+      "id": 3,
+      "name": "Гость"
     }
   ],
   "posts": [
