@@ -19,7 +19,7 @@ const UserRowContainer = ({
 
 
 	const onRoleChange = ({target}) => {
-		setSelectedRoleId(target.value);
+		setSelectedRoleId(Number(target.value));
 	};
 
 	const onRoleSave = (userId, newUserRoleId) => {
