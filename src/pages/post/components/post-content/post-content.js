@@ -7,21 +7,25 @@ const PostContentContainer = ({
 	className,
 	post: { id, title, imageUrl, content, publishedAt },
 }) => {
-
-const navigate = useNavigate();
+	const navigate = useNavigate();
 
 	return (
 		<div className={className}>
 			<img src={imageUrl} alt={title} />
 			<H2>{title}</H2>
-			<SpecialPanel publishedAt={publishedAt} margin="-20px 0 20px" editButton={
+			<SpecialPanel
+				id={id}
+				publishedAt={publishedAt}
+				margin="-20px 0 20px"
+				editButton={
 					<Icon
 						id="fa-pencil-square"
 						margin="0 10px 0 0"
 						size="21px"
 						onClick={() => navigate(`/post/${id}/edit`)}
 					/>
-				} />
+				}
+			/>
 			<div className="post-text">{content}</div>
 		</div>
 	);
