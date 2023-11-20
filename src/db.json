@@ -105,6 +105,27 @@
       "published_at": "2038-09-22 16:01",
       "content": "Классная статья! И главное, про кодинг!",
       "id": 1
+    },
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2056-01-20 01:02",
+      "content": "t54rygt4y",
+      "id": 2
+    },
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2041-08-24 02:21",
+      "content": "4gtr5yh4w6t4r",
+      "id": 3
+    },
+    {
+      "author_id": "001",
+      "post_id": "002",
+      "published_at": "2059-11-14 05:19",
+      "content": "tgfewwwwwwwww54",
+      "id": 4
     }
   ],
   "sessions": [
@@ -184,6 +205,17 @@
         "roleId": 0
       },
       "id": 7
+    },
+    {
+      "hash": "0.54038517374404659854292276577325537800788879394531",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "F6391453d",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": 8
     }
   ]
 }
