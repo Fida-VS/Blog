@@ -19,6 +19,7 @@ const PostContainer = ({ className }) => {
 	const requestServer = useServerRequest();
 	const post = useSelector(selectPost);
 
+
 	useLayoutEffect(() => {
 		dispatch(RESET_POST_DATA);
 	}, [dispatch, isCreating]);
@@ -38,6 +39,7 @@ const PostContainer = ({ className }) => {
 	if (isLoading) {
 		return null;
 	}
+
 
 	const SpecificPostPage =
 		isCreating || isEditing ? (

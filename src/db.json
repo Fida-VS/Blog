@@ -11,7 +11,7 @@
       "login": "FidaVS",
       "password": "123456",
       "registed_at": "2047-12-25 02:06",
-      "role_id": 2,
+      "role_id": 1,
       "id": "K8-GWP-"
     },
     {
@@ -156,11 +156,25 @@
       "id": 3
     },
     {
-      "author_id": "001",
+      "author_id": "2eEi7QF",
       "post_id": "002",
-      "published_at": "2059-11-14 05:19",
-      "content": "tgfewwwwwwwww54",
-      "id": 4
+      "published_at": "2055-06-05 14:47",
+      "content": "комментарий от Ивана\n",
+      "id": 5
+    },
+    {
+      "author_id": "2eEi7QF",
+      "post_id": "066",
+      "published_at": "2058-06-18 11:08",
+      "content": "gyfvhjm",
+      "id": 7
+    },
+    {
+      "author_id": "2eEi7QF",
+      "post_id": "6djOHAr",
+      "published_at": "2047-08-23 12:55",
+      "content": "gtfh",
+      "id": 8
     }
   ],
   "sessions": [
@@ -251,6 +265,17 @@
         "roleId": 0
       },
       "id": 8
+    },
+    {
+      "hash": "0.52382535960816145603757831850089132785797119140625",
+      "user": {
+        "id": "K8-GWP-",
+        "login": "FidaVS",
+        "password": "123456",
+        "registeredAt": "2047-12-25 02:06",
+        "roleId": 1
+      },
+      "id": 9
     }
   ]
 }
