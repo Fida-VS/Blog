@@ -1,8 +1,10 @@
+import { PropTypes } from 'prop-types';
 import { useServerRequest } from '../../../../hooks';
 import { Icon } from '../../../../components';
 import styled from 'styled-components';
 import { TableRow } from '../table-row/table-row';
 import { useState } from 'react';
+import { PROP_TYPE } from '../../../../constants';
 
 const UserRowContainer = ({
 	className,
@@ -17,8 +19,7 @@ const UserRowContainer = ({
 	const [selectedRoleId, setSelectedRoleId] = useState(userRoleId);
 	const requestServer = useServerRequest();
 
-
-	const onRoleChange = ({target}) => {
+	const onRoleChange = ({ target }) => {
 		setSelectedRoleId(Number(target.value));
 	};
 
@@ -38,7 +39,9 @@ const UserRowContainer = ({
 				<div className="role-column">
 					<select value={selectedRoleId} onChange={onRoleChange}>
 						{roles.map(({ id: roleId, name: roleName }) => (
-							<option key={roleId} value={roleId}>{roleName}</option>
+							<option key={roleId} value={roleId}>
+								{roleName}
+							</option>
 						))}
 					</select>
 
@@ -48,26 +51,28 @@ const UserRowContainer = ({
 						disabled={isSaveButtonDisabled}
 						onClick={() => onRoleSave(id, selectedRoleId)}
 					/>
-
 				</div>
 			</TableRow>
-			<Icon
-				id="fa-trash"
-				margin="10px 0 0 0"
-				onClick={onUserRemove}
-			/>
+			<Icon id="fa-trash" margin="10px 0 0 0" onClick={onUserRemove} />
 		</div>
 	);
 };
 
 export const UserRow = styled(UserRowContainer)`
-display: flex;
-margin-top: 10px;
+	display: flex;
+	margin-top: 10px;
 
-& select {
-	padding: 0 5px;
-	font-size: 16px;
-
-}
-
+	& select {
+		padding: 0 5px;
+		font-size: 16px;
+	}
 `;
+
+UserRow.propTypes = {
+	id: PropTypes.string.isRequired,
+	login: PropTypes.string.isRequired,
+	registeredAt: PropTypes.string.isRequired,
+	roleId: PROP_TYPE.ROLE_ID.isRequired,
+	roles: PropTypes.arrayOf(PROP_TYPE.ROLE).isRequired,
+	onUserRemove: PropTypes.func.isRequired,
+};

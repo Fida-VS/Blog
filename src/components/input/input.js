@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import { forwardRef } from 'react';
 import styled from 'styled-components';
 
@@ -13,3 +14,8 @@ border: 1px solid #000;
 padding: 10px;
 font-size: 18px;
 `;
+
+
+Input.propTypes = {
+	width: PropTypes.string,
+};

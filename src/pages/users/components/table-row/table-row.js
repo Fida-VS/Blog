@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import styled from "styled-components";
 
 const TableRowContainer = ({className, children}) => (
@@ -27,3 +28,8 @@ ${({border}) => (border ? 'border: 1px solid #000;' : '')};
 	width: auto;
 }
 `;
+
+
+TableRow.propTypes = {
+	children: PropTypes.node.isRequired,
+};

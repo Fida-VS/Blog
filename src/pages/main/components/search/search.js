@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import { Icon, Input } from "../../../../components";
 import styled from "styled-components";
 
@@ -33,3 +34,9 @@ font-size: 21px;
 }
 
 `;
+
+
+Search.propTypes = {
+	searchPhrase: PropTypes.string.isRequired,
+	onChange: PropTypes.func.isRequired,
+};
